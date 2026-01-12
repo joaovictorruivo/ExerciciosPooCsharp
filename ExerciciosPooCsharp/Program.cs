@@ -1,4 +1,5 @@
 ﻿using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex003;
+using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex004;
 using System;
 //Este é um arquivo principal com o metodo main (unico ponto de entrada), onde escolhemos um exercíco para Rodar.
 //
@@ -11,6 +12,7 @@ class Program
         Console.WriteLine("2 - Pessoa Mais velha");
         Console.WriteLine("3 - Funcionario Salario");
         Console.WriteLine("4 - Conta Bancaria(Construtor)");
+        Console.WriteLine("5 - Produto Altera");
 
         Console.Write("Escolha: ");
         int op = int.Parse(Console.ReadLine());
@@ -31,7 +33,10 @@ class Program
         {
             Ex001_Conta.Executar();
         }
-
+        else if (op == 5)
+        {
+            ProdutoAltera.Executar();
+        }
 
 
     }
