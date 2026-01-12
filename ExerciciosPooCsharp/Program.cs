@@ -1,6 +1,7 @@
 ﻿using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex003;
 using System;
-
+//Este é um arquivo principal com o metodo main (unico ponto de entrada), onde escolhemos um exercíco para Rodar.
+//
 class Program
 {
         static void Main(string[] args)

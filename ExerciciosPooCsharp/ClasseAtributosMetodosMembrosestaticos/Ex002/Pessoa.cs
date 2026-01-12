@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex002;
+using System;
 
 namespace ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex002
 {
