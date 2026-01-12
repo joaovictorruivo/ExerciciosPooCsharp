@@ -20,7 +20,7 @@ namespace ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex004
         {
             Quantidade += quantidade;
         }
-
+        //void = vazio(não retorna valor)
         public void RemoverProdutos(int quantidade)
         {
             Quantidade -= quantidade;
