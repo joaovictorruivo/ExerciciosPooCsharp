@@ -3,6 +3,7 @@ using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex004;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex005;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex006;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex007;
+using ExerciciosPooCsharp.ConstrutoresThisSobrecargaEncaps.Ex002;
 using System;
 //Este é um arquivo principal com o metodo main (unico ponto de entrada), onde escolhemos um exercíco para Rodar.
 //
@@ -19,6 +20,7 @@ class Program
         Console.WriteLine("6 - Funcionario Salario Imposto");
         Console.WriteLine("7 - Nota de Aprovação");
         Console.WriteLine("8 - Conversor de Moedas");
+        Console.WriteLine("\n9 - Conta bancaria (ESPECIAL)");
 
         Console.Write("Escolha: ");
         int op = int.Parse(Console.ReadLine());
@@ -56,6 +58,10 @@ class Program
         else if (op == 8)
         {
             ConversorDeMoeda.Executar();
+        }
+        else if (op == 9)
+        {
+            Banco.Executar();
         }
     }
 }
