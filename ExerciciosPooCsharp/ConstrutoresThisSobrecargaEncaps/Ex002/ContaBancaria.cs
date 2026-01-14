@@ -22,38 +22,43 @@ namespace ExerciciosPooCsharp.ConstrutoresThisSobrecargaEncaps.Ex002
     internal class ContaBancaria
     {
         public int NumeroConta {  get; private set; } // Número da conta (não pode ser alterado)
-        public string Titular { get; set; } // Nome do titular (pode ser alterado)
+        public string Titular { get; set; } // Nome do titular (pode ser alterado)-Talvez por uma possivel troca de nome em um casamanto.
         public double Saldo { get; private set; } // Saldo (controlado, só pode ser alterado por depósito ou saque)
 
-        //Construtor
-        //2 parametros
+        //Construtores
+        //2 parametros/argumentos - já que saldo recebe 0;
         public ContaBancaria(int numeroConta, string titular)
         {
             NumeroConta = numeroConta;
             Titular = titular;  
         }
-        //3 parametros
+        //3 parametros - pala this para reaproveitar o construtor de dois argumentos.
+        //No 3 parametro foi mudado o nome de saldo para depositoInicial, pois realiza um deposito e chamar o metodo Deposito
+        //quem contem a logica de Deposito é a operação deposito, pois se a logica mudar automaticamente vai seguir o padrão mudado
+        //Fora que o projeto fica melhor e fácil para manutenção.
         public ContaBancaria(int numeroConta, string titular, double depositoInicial) : this(numeroConta, titular)
         {
             Deposito(depositoInicial);
         }
 
-        public void Deposito(double quantia)
+        public void Deposito(double quantia)//Deposito apenas acrescenta a quantia;
         {
             Saldo += quantia;
         }
 
-        public void Saque(double quantia)
+        public void Saque(double quantia)//Saque a quantia + 5 de taxa para saque.
         {
             Saldo -= quantia + 5.0;
         }
-
+        
+        
+        //ToString para mostrar as mensagens da conta.
         public override string ToString()
-        {
+        { 
             return "Conta " + NumeroConta 
                 + ", Titular: " 
                 + Titular 
-                + ", Saldo: R$" 
+                + ", Saldo: R$ " 
                 + Saldo.ToString("F2", CultureInfo.InvariantCulture);
         }
 
