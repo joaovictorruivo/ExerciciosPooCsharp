@@ -31,6 +31,20 @@ namespace ExerciciosPooCsharp.ConstrutoresThisSobrecargaEncaps.Ex002
 
             Console.WriteLine("\nDados da conta: ");
             Console.WriteLine(conta);
+
+            Console.Write("\nEntre o valor para depósito: ");
+            double quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            conta.Deposito(quantia);
+            Console.WriteLine("Dados da conta atualizados: ");
+            Console.WriteLine(conta);
+
+            Console.Write("\nEntre o valor para saque: ");
+            quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            conta.Saque(quantia);
+            Console.WriteLine("Dados da conta atualizados: ");
+            Console.WriteLine(conta);
+
+
         }
     }
 }

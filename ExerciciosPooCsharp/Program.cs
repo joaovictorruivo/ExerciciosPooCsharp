@@ -22,7 +22,9 @@ class Program
         Console.WriteLine("8 - Conversor de Moedas");
         Console.WriteLine("\n9 - Conta bancaria (ESPECIAL)");
 
-        Console.Write("Escolha: ");
+        Console.Write("\nEscolha: ");
+        Console.WriteLine();
+
         int op = int.Parse(Console.ReadLine());
 
         if (op == 1)

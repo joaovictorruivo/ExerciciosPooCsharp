@@ -33,9 +33,19 @@ namespace ExerciciosPooCsharp.ConstrutoresThisSobrecargaEncaps.Ex002
             Titular = titular;  
         }
         //3 parametros
-        public ContaBancaria(int numeroConta, string titular, double saldo) : this(numeroConta, titular)
+        public ContaBancaria(int numeroConta, string titular, double depositoInicial) : this(numeroConta, titular)
         {
-            Saldo = saldo;
+            Deposito(depositoInicial);
+        }
+
+        public void Deposito(double quantia)
+        {
+            Saldo += quantia;
+        }
+
+        public void Saque(double quantia)
+        {
+            Saldo -= quantia + 5.0;
         }
 
         public override string ToString()
@@ -43,37 +53,9 @@ namespace ExerciciosPooCsharp.ConstrutoresThisSobrecargaEncaps.Ex002
             return "Conta " + NumeroConta 
                 + ", Titular: " 
                 + Titular 
-                + ", Saldo: " 
+                + ", Saldo: R$" 
                 + Saldo.ToString("F2", CultureInfo.InvariantCulture);
         }
-
-        
-        /*
-        // Método para realizar depósitos
-        public void Depositar(double valor)
-        {
-            Saldo += valor;
-        }
-
-        // Método para realizar saques (com taxa de $5.00)
-        public void Sacar(double valor)
-        {
-            double valorComTaxa = valor + 5.0; // Considerando a taxa de saque
-            if (Saldo >= valorComTaxa)
-            {
-                Saldo -= valorComTaxa;
-            }
-            else
-            {
-                Console.WriteLine("Saldo insuficiente para realizar o saque com a taxa.");
-            }
-        }
-
-        // Método para mostrar os dados da conta
-        public void MostrarDados()
-        {
-            Console.WriteLine($"Conta {NumeroConta}, Titular: {Titular}, Saldo: $ {Saldo:F2}");
-        }*/
 
     }
 }
