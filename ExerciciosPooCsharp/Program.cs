@@ -1,4 +1,5 @@
-﻿using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex003;
+﻿using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex001;
+using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex003;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex004;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex005;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex006;
@@ -21,6 +22,7 @@ class Program
         Console.WriteLine("7 - Nota de Aprovação");
         Console.WriteLine("8 - Conversor de Moedas");
         Console.WriteLine("\n9 - Conta bancaria (ESPECIAL)");
+        Console.WriteLine("10 - Estudante Aluguel");
 
         Console.Write("\nEscolha: ");
         Console.WriteLine();
@@ -64,6 +66,10 @@ class Program
         else if (op == 9)
         {
             Banco.Executar();
+        }
+        else if (op == 10)
+        {
+            EstudentAluguel.Executar();
         }
     }
 }
