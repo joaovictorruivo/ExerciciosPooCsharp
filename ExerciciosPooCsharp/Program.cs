@@ -7,6 +7,7 @@ using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex006;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex007;
 using ExerciciosPooCsharp.ConstrutoresThisSobrecargaEncaps.Ex002;
 using System;
+using System.Collections.Generic;
 //Este é um arquivo principal com o metodo main (unico ponto de entrada), onde escolhemos um exercíco para Rodar.
 //
 class Program
@@ -31,51 +32,30 @@ class Program
 
         int op = int.Parse(Console.ReadLine());
 
-        if (op == 1)
+        // Dicionário de opções e seus respectivos métodos
+        var options = new Dictionary<int, Action>
         {
-            Ex01_Retangulo.Executar();
-        }
-        else if (op == 2)
-        {
-            PessoaMaisVelha.Executar();
-        }
-        else if (op == 3)
-        {
-            FuncionarioSalario.Executar();
-        }
-        else if (op == 4)
-        {
-            Ex001_Conta.Executar();
-        }
-        else if (op == 5)
-        {
-            ProdutoAltera.Executar();
-        }
+            { 1, Ex01_Retangulo.Executar },
+            { 2, PessoaMaisVelha.Executar },
+            { 3, FuncionarioSalario.Executar },
+            { 4, Ex001_Conta.Executar },
+            { 5, ProdutoAltera.Executar },
+            { 6, FuncionarioSalario1.Executar },
+            { 7, NotaAprovacao.Executar },
+            { 8, ConversorDeMoeda.Executar },
+            { 9, Banco.Executar },
+            { 10, EstudentAluguel.Executar },
+            { 11, EmployeeList.Executar }
+        };
 
-        else if (op == 6)
+        // Verificar se a opção escolhida existe no dicionário e executar
+        if (options.ContainsKey(op))
         {
-            FuncionarioSalario1.Executar();
+            options[op]();
         }
-
-        else if (op == 7)
+        else
         {
-            NotaAprovacao.Executar();
-        }
-        else if (op == 8)
-        {
-            ConversorDeMoeda.Executar();
-        }
-        else if (op == 9)
-        {
-            Banco.Executar();
-        }
-        else if (op == 10)
-        {
-            EstudentAluguel.Executar();
-        }
-        else if (op == 11)
-        {
-            EmployeeList.Executar();
+            Console.WriteLine("Opção inválida.");
         }
     }
 }
