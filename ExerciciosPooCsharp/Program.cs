@@ -32,6 +32,9 @@ class Program
 
         int op = int.Parse(Console.ReadLine());
 
+        // Limpar o terminal após a escolha
+        Console.Clear();
+
         // Dicionário de opções e seus respectivos métodos
         var options = new Dictionary<int, Action>
         {
