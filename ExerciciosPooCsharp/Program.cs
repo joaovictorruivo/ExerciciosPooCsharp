@@ -1,6 +1,7 @@
 ﻿using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex001;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex002;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex003;
+using ExerciciosPooCsharp._4TopicosEspeciaisC_Parte1;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex003;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex004;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex005;
@@ -28,6 +29,7 @@ class Program
         Console.WriteLine("10 - Estudante Aluguel");
         Console.WriteLine("11 - Listas - Employees");
         Console.WriteLine("12 - Matrix");
+        Console.WriteLine("13 - Tópicos especiais em C# Parte 1");
 
         Console.Write("\nEscolha: ");
         Console.WriteLine();
@@ -51,7 +53,9 @@ class Program
             { 9, Banco.Executar },
             { 10, EstudentAluguel.Executar },
             { 11, EmployeeList.Executar },
-            { 12, Matrix.Executar }
+            { 12, Matrix.Executar },
+            { 13, Topicos.Executar }
+
         };
 
         // Verificar se a opção escolhida existe no dicionário e executar
