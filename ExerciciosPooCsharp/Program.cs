@@ -4,6 +4,7 @@ using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex003;
 using ExerciciosPooCsharp._4TopicosEspeciaisC_Parte1;
 using ExerciciosPooCsharp._5EnumeracaoComposicao.Ex001;
 using ExerciciosPooCsharp._5EnumeracaoComposicao.Ex002;
+using ExerciciosPooCsharp._5EnumeracaoComposicao.Ex003;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex003;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex004;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex005;
@@ -27,13 +28,14 @@ class Program
         Console.WriteLine("6 - Funcionario Salario Imposto");
         Console.WriteLine("7 - Nota de Aprovação");
         Console.WriteLine("8 - Conversor de Moedas");
-        Console.WriteLine("\n9 - Conta bancaria (ESPECIAL)");
+        Console.WriteLine("9 - Conta bancaria (ESPECIAL)");
         Console.WriteLine("10 - Estudante Aluguel");
         Console.WriteLine("11 - Listas - Employees");
         Console.WriteLine("12 - Matrix");
         Console.WriteLine("13 - Tópicos especiais em C# Parte 1");
         Console.WriteLine("14 - Contrato de trabalhador");
         Console.WriteLine("15 - Post de comentários");
+        Console.WriteLine("16 - Pedido de cliente");
 
         Console.Write("\nEscolha: ");
         Console.WriteLine();
@@ -60,7 +62,8 @@ class Program
             { 12, Matrix.Executar },
             { 13, Topicos.Executar },
             { 14, Programa.Executar },
-            { 15, Program2.Executar }
+            { 15, Program2.Executar },
+            { 16, Program3.Executar }
 
 
         };
