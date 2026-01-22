@@ -6,6 +6,7 @@ using ExerciciosPooCsharp._5EnumeracaoComposicao.Ex001;
 using ExerciciosPooCsharp._5EnumeracaoComposicao.Ex002;
 using ExerciciosPooCsharp._5EnumeracaoComposicao.Ex003;
 using ExerciciosPooCsharp._6HerancaPolimorfismo.Ex001;
+using ExerciciosPooCsharp._6HerancaPolimorfismo.Ex002;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex003;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex004;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex005;
@@ -38,6 +39,7 @@ class Program
         Console.WriteLine("15 - Post de comentários");
         Console.WriteLine("16 - Pedido de cliente");
         Console.WriteLine("17 - Funcionarios Pagamentos");
+        Console.WriteLine("18 - Produtos faturados");
 
         Console.Write("\nEscolha: ");
         Console.WriteLine();
@@ -66,7 +68,8 @@ class Program
             { 14, Programa.Executar },
             { 15, Program2.Executar },
             { 16, Program3.Executar },
-            { 17, Programm.Executar }
+            { 17, Programm.Executar },
+            { 18, Programm2.Executar }
 
 
         };
