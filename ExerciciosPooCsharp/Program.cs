@@ -8,6 +8,7 @@ using ExerciciosPooCsharp._5EnumeracaoComposicao.Ex003;
 using ExerciciosPooCsharp._6HerancaPolimorfismo.Ex001;
 using ExerciciosPooCsharp._6HerancaPolimorfismo.Ex002;
 using ExerciciosPooCsharp._6HerancaPolimorfismo.Ex003;
+using ExerciciosPooCsharp._6HerancaPolimorfismo.Ex004;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex003;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex004;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex005;
@@ -42,6 +43,7 @@ class Program
         Console.WriteLine("17 - Funcionarios Pagamentos");
         Console.WriteLine("18 - Produtos faturados");
         Console.WriteLine("19 - Areas circle e rectangle");
+        Console.WriteLine("20 - Imposto empresa e individuo");
 
         Console.Write("\nEscolha: ");
         Console.WriteLine();
@@ -72,7 +74,8 @@ class Program
             { 16, Program3.Executar },
             { 17, Programm.Executar },
             { 18, Programm2.Executar },
-            { 19, Programm3.Executar }
+            { 19, Programm3.Executar },
+            { 20, Programm4.Executar }
 
 
         };
