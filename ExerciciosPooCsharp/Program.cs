@@ -10,6 +10,7 @@ using ExerciciosPooCsharp._6HerancaPolimorfismo.Ex002;
 using ExerciciosPooCsharp._6HerancaPolimorfismo.Ex003;
 using ExerciciosPooCsharp._6HerancaPolimorfismo.Ex004;
 using ExerciciosPooCsharp._7TratamentoExcecoes.Ex001;
+using ExerciciosPooCsharp._7TratamentoExcecoes.Ex002;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex003;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex004;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex005;
@@ -46,7 +47,7 @@ class Program
         Console.WriteLine("19 - Areas circle e rectangle");
         Console.WriteLine("20 - Imposto empresa e individuo");
         Console.WriteLine("21 - Tratando exceção");
-
+        Console.WriteLine("22 - Processo conta com exceção");
         Console.Write("\nEscolha: ");
         Console.WriteLine();
 
@@ -78,7 +79,8 @@ class Program
             { 18, Programm2.Executar },
             { 19, Programm3.Executar },
             { 20, Programm4.Executar },
-            { 21, Program71.Executar  }
+            { 21, Program71.Executar  },
+            { 22, Program72.Executar }
 
 
         };
