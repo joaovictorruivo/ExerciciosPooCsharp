@@ -7,12 +7,13 @@ namespace ExerciciosPooCsharp._9Interfaces.Ex001.Services
         public double PricePerHour { get; private set; }
         public double PricePerDay { get; private set; }
 
-        private BrazilTaxService brazilTaxService = new BrazilTaxService();//não é a melhor forma de fazer. 
-
-        public RentalService(double pricePerHour, double pricePerDay)
+        //private BrazilTaxService brazilTaxService = new BrazilTaxService();//não é a melhor forma de fazer. 
+        private ITaxService _taxService;//
+        public RentalService(double pricePerHour, double pricePerDay, ITaxService taxService)//
         {
             PricePerHour = pricePerHour;
             PricePerDay = pricePerDay;
+            _taxService = taxService; //
         }
 
         public void ProcessInvoice(CarRental carRental)
@@ -28,7 +29,7 @@ namespace ExerciciosPooCsharp._9Interfaces.Ex001.Services
             {
                 basicPayment = PricePerDay * Math.Ceiling(duration.TotalDays);
             }
-            double tax = brazilTaxService.Tax(basicPayment);
+            double tax = _taxService.Tax(basicPayment);//
 
             carRental.Invoice = new Invoice(basicPayment, tax);
 
