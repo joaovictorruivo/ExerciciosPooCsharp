@@ -1,6 +1,7 @@
 ﻿namespace ExerciciosPooCsharp._9Interfaces.Ex001.Services
 {
-    internal class BrazilTaxService : ITaxService
+    internal class BrazilTaxService : ITaxService //agora é um subtipo de tax service
+        //obs: não é herança é realização de interface.
     {
         public double Tax(double amount)
         {

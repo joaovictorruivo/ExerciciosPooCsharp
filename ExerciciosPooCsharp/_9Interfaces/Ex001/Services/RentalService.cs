@@ -2,12 +2,14 @@
 
 namespace ExerciciosPooCsharp._9Interfaces.Ex001.Services
 {
-    internal class RentalService
+    internal class RentalService//serviço de aluguel
     {
         public double PricePerHour { get; private set; }
         public double PricePerDay { get; private set; }
+        //
+        //private BrazilTaxService brazilTaxService = new BrazilTaxService();//DEPENDENCIA JÁ INSTANCIADA 
+        //não é a melhor forma de fazer, pois gera dois pontos de alteração. 
 
-        //private BrazilTaxService brazilTaxService = new BrazilTaxService();//não é a melhor forma de fazer. 
         private ITaxService _taxService;//
         public RentalService(double pricePerHour, double pricePerDay, ITaxService taxService)//
         {
