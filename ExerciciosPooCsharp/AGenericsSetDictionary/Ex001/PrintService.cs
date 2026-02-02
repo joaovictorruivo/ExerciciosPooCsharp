@@ -9,15 +9,16 @@ How many values? 3 Criar um serviço de impressão: 10
 [10, 8, 23]
 First: 10*/
 
-
+//agora a classe vai ser parametrizada por tipo T genertico Obs: pode ser qualquer nome.
+//
 namespace ExerciciosPooCsharp.AGenericsSetDictionary.Ex001
 {
-    internal class PrintService
+    internal class PrintService<T>
     {
-        private int[] _values = new int[10];
+        private T[] _values = new T[10];
         private int _count = 0;
 
-        public void AddValue(int value)
+        public void AddValue(T value)
         {
             if (_count == 10)
             {
@@ -27,7 +28,7 @@ namespace ExerciciosPooCsharp.AGenericsSetDictionary.Ex001
             _count++;
         }
 
-        public int First()
+        public T First()
         {
             if ( _count == 0)
             {

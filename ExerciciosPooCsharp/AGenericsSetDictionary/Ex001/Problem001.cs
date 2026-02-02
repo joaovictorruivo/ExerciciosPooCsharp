@@ -5,8 +5,9 @@ namespace ExerciciosPooCsharp.AGenericsSetDictionary.Ex001
     {
         public static void Executar()
         {
-            PrintService printService = new PrintService();
-            
+            //PrintService printService = new PrintService();//instanciar agora do nosso jeito.
+            PrintService<int> printService = new PrintService<int>();
+
             Console.Write("How many values? ");
             int n = int.Parse(Console.ReadLine());
             
@@ -18,8 +19,6 @@ namespace ExerciciosPooCsharp.AGenericsSetDictionary.Ex001
 
             printService.Print();
             Console.WriteLine("First: " + printService.First());
-
-
 
         }
     }
