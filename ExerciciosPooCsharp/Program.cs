@@ -13,6 +13,7 @@ using ExerciciosPooCsharp._7TratamentoExcecoes.Ex001;
 using ExerciciosPooCsharp._7TratamentoExcecoes.Ex002;
 using ExerciciosPooCsharp._9Interfaces.Ex001;
 using ExerciciosPooCsharp._9Interfaces.Ex002;
+using ExerciciosPooCsharp.AGenericsSetDictionary.Ex001;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex003;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex004;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex005;
@@ -52,6 +53,7 @@ class Program
         Console.WriteLine("22 - Processo conta com exceção");
         Console.WriteLine("24 - Aluguel de carro (Avanç.)");
         Console.WriteLine("25 - Promissorias mensais com Juros");
+        Console.WriteLine("26 - Print Service");
 
         Console.Write("\nEscolha: ");
         Console.WriteLine();
@@ -87,7 +89,8 @@ class Program
             { 21, Program71.Executar  },
             { 22, Program72.Executar },
             { 24, Program_9.Executar },
-            { 25, Program9_2.Executar }
+            { 25, Program9_2.Executar },
+            { 26, Problem001.Executar }
 
 
         };
