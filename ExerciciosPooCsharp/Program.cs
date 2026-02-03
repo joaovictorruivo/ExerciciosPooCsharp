@@ -1,4 +1,5 @@
-﻿using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex001;
+﻿using ExerciciosPooCsharp._10GenericsSetDictionary.Ex002;
+using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex001;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex002;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex003;
 using ExerciciosPooCsharp._4TopicosEspeciaisC_Parte1;
@@ -54,6 +55,7 @@ class Program
         Console.WriteLine("24 - Aluguel de carro (Avanç.)");
         Console.WriteLine("25 - Promissorias mensais com Juros");
         Console.WriteLine("26 - Print Service");
+        Console.WriteLine("27 - Calculation Service");
 
         Console.Write("\nEscolha: ");
         Console.WriteLine();
@@ -90,7 +92,8 @@ class Program
             { 22, Program72.Executar },
             { 24, Program_9.Executar },
             { 25, Program9_2.Executar },
-            { 26, Problem001.Executar }
+            { 26, Problem001.Executar },
+            { 27, Problem02.Executar}
 
 
         };
