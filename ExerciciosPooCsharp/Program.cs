@@ -1,4 +1,5 @@
 ﻿using ExerciciosPooCsharp._10GenericsSetDictionary.Ex002;
+using ExerciciosPooCsharp._10GenericsSetDictionary.Ex003;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex001;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex002;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex003;
@@ -56,6 +57,7 @@ class Program
         Console.WriteLine("25 - Promissorias mensais com Juros");
         Console.WriteLine("26 - Print Service");
         Console.WriteLine("27 - Calculation Service");
+        Console.WriteLine("28 - Exemplo de Algebra");
 
         Console.Write("\nEscolha: ");
         Console.WriteLine();
@@ -93,7 +95,8 @@ class Program
             { 24, Program_9.Executar },
             { 25, Program9_2.Executar },
             { 26, Problem001.Executar },
-            { 27, Problem02.Executar}
+            { 27, Problem02.Executar },
+            { 28, DemoAlgebra.Executar }
 
 
         };
