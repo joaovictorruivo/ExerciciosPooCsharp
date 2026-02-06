@@ -23,8 +23,7 @@ using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex005;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex006;
 using ExerciciosPooCsharp.ClasseAtributosMetodosMembrosestaticos.Ex007;
 using ExerciciosPooCsharp.ConstrutoresThisSobrecargaEncaps.Ex002;
-using System;
-using System.Collections.Generic;
+
 //Este é um arquivo principal com o metodo main (unico ponto de entrada), onde escolhemos um exercíco para Rodar.
 //
 class Program
