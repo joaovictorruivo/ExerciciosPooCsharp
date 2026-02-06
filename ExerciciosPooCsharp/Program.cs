@@ -1,6 +1,7 @@
 ﻿using ExerciciosPooCsharp._10GenericsSetDictionary.Ex002;
 using ExerciciosPooCsharp._10GenericsSetDictionary.Ex003;
 using ExerciciosPooCsharp._10GenericsSetDictionary.Ex005;
+using ExerciciosPooCsharp._11TopicosEspeciaisC_Parte2.Topicos2;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex001;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex002;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex003;
@@ -59,6 +60,8 @@ class Program
         Console.WriteLine("27 - Calculation Service");
         Console.WriteLine("28 - Exemplo de Algebra");
         Console.WriteLine("29 - Instrutor e Alunos, conjuntos!");
+        Console.WriteLine("30 - Tópicos especiais em C# Parte 2");
+
 
         Console.Write("\nEscolha: ");
         Console.WriteLine();
@@ -98,7 +101,8 @@ class Program
             { 26, Problem001.Executar },
             { 27, Problem02.Executar },
             { 28, DemoAlgebra.Executar },
-            { 29, Problem10_5.Executar }
+            { 29, Problem10_5.Executar },
+            { 30, Topicos2.Executar }
 
 
         };
