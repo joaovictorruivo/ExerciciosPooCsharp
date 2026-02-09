@@ -2,6 +2,7 @@
 using ExerciciosPooCsharp._10GenericsSetDictionary.Ex003;
 using ExerciciosPooCsharp._10GenericsSetDictionary.Ex005;
 using ExerciciosPooCsharp._11TopicosEspeciaisC_Parte2.Topicos2;
+using ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex001;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex001;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex002;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex003;
@@ -102,7 +103,8 @@ class Program
             { 27, Problem02.Executar },
             { 28, DemoAlgebra.Executar },
             { 29, Problem10_5.Executar },
-            { 30, Topicos2.Executar }
+            { 30, Topicos2.Executar },
+            { 31, Problem_Delg.Executar }
 
 
         };
