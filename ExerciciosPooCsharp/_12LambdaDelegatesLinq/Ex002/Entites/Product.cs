@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex002.Entites
+﻿namespace ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex002.Entites
 {
     internal class Product
     {
