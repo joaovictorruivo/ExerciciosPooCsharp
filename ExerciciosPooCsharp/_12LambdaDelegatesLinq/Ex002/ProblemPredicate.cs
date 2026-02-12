@@ -16,18 +16,13 @@ namespace ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex002
             list.Add(new Product("Tablet", 350.50));
             list.Add(new Product("HD Case", 80.90));
 
-            Func<Product, string> func = NameUpper;
-
+            Func<Product, string> func = p => p.Name.ToUpper();//se usar {chaves}, obrigado colocar a palavra return
+            
             List<string> resulte = list.Select(func).ToList();
             foreach(string s in resulte)
             {
                 Console.WriteLine(s);
             }
-        }
-        static string NameUpper(Product p)
-        {
-            return p.Name.ToUpper(); 
-        }
-
+        }      
     }
 }
