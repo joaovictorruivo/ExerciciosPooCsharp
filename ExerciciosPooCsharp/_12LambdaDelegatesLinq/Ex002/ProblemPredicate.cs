@@ -1,5 +1,8 @@
 ﻿using ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex002.Entites;
-// Action Exemplo com Action ForEach
+using System.Collections.Specialized;
+using System.Linq;
+//Fazer um programa que, a partir de uma lista de produtos, gere uma nova lista 
+//contendo os nomes dos produtos em caixa alta.
 namespace ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex002
 {
     internal class ProblemPredicate
@@ -13,12 +16,17 @@ namespace ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex002
             list.Add(new Product("Tablet", 350.50));
             list.Add(new Product("HD Case", 80.90));
 
-            list.ForEach(p => { p.Price += p.Price * 0.1; }); //inline argumento do foreach
-            foreach (Product p in list)
-            {
-                Console.WriteLine(p);
+            Func<Product, string> func = NameUpper;
 
+            List<string> resulte = list.Select(func).ToList();
+            foreach(string s in resulte)
+            {
+                Console.WriteLine(s);
             }
+        }
+        static string NameUpper(Product p)
+        {
+            return p.Name.ToUpper(); 
         }
 
     }
