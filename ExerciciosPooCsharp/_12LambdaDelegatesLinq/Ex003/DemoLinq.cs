@@ -80,8 +80,9 @@ namespace ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex003
             var r15 = products.Where(p => p.Category.Id == 1).Select(p => p.Price).Aggregate((x, y) => x + y);
             Console.WriteLine("Category 1 Aggregate sum: " + r15);
 
-            var r16 = products.GroupBy(p = p => p.Category);
-            foreach(IGrouping<Category, Product> group in r16)
+
+            var r16 = products.GroupBy(p => p.Category);//agrupa os produtos por category.
+            foreach (IGrouping<Category, Product> group in r16)//percorre cada elemento com chave e coleção.
             {
                 Console.WriteLine("Category" + group.Key.Name + ":");
                 foreach(Product p  in group)
