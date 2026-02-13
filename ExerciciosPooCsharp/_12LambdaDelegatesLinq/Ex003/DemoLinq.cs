@@ -59,6 +59,27 @@ namespace ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex003
 
             var r9 = products.Where(p => p.Id == 30).SingleOrDefault();//so pra retornar nenhum elemento. nulo ou vazio
             Console.WriteLine("SINGLE OR DEFAULT test1:" + r9);
+
+            var r10 = products.Max(p => p.Price);// para o maior preço.
+            Console.WriteLine("Max price: " + r10 );
+
+            var r11 = products.Min(p => p.Price);// para o menor preço.
+            Console.WriteLine("Min price: " + r11);
+
+            var r12 = products.Where(p => p.Category.Id == 1).Sum(p => p.Price);//soma dos preço da cat 1
+            Console.WriteLine("Category 1 sum prices: " + r12);
+
+            var r13 = products.Where(p => p.Category.Id == 1).Average(p => p.Price);//média dos preço da cat 1
+            Console.WriteLine("Category 1 Average prices: " + r13);
+
+            var r14 = products.Where(p => p.Category.Id == 5).Select(p => p.Price).DefaultIfEmpty(0.0).Average();
+            Console.WriteLine("Category 5 Average prices: " + r14);// para não dar exceção
+
+            //Operação muito importante agragate - fazer minha propria operação
+
+            var r15 = products.Where(p => p.Category.Id == 1).Select(p => p.Price).Aggregate((x, y) => x + y);
+            Console.WriteLine("Category 1 Aggregate sum: " + r15);
+
         }
     }
 }
