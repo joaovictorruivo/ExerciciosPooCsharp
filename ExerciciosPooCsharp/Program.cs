@@ -5,6 +5,7 @@ using ExerciciosPooCsharp._11TopicosEspeciaisC_Parte2.Topicos2;
 using ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex001;
 using ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex002;
 using ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex003;
+using ExerciciosPooCsharp._12LambdaDelegatesLinq.Ex004;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex001;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex002;
 using ExerciciosPooCsharp._3ComportamentoMemoriaArraysListas.Ex003;
@@ -67,6 +68,7 @@ class Program
         Console.WriteLine("31 - Problema com Delegates");
         Console.WriteLine("32 - Problema ccom Predicate");
         Console.WriteLine("33 - Demo com Lambda e Linq");
+        Console.WriteLine("34- Demo  LINQ com notação similar na SQL");
 
         Console.Write("\nEscolha: ");
         Console.WriteLine();
@@ -110,7 +112,8 @@ class Program
             { 30, Topicos2.Executar },
             { 31, Problem_Delg.Executar },
             { 32, ProblemPredicate.Executar },
-            { 33, DemoLinq.Executar  }
+            { 33, DemoLinq.Executar  },
+            { 34, DemoLinqaSql.Executar }
 
 
         };
